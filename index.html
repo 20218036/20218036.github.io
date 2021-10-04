@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>ZHANGZHETAO</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo"><h1>ZHANG_<a href="#">ZHE&amp;TAO</a></h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">home</a></li>
+         
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <ul id="images">
+        <li><img src="images/1.jpg" width="600" height="300" alt="photo_one" /></li>
+        <li><img src="images/2.jpg" width="600" height="300" alt="photo_two" /></li>
+        <li><img src="images/3.jpg" width="600" height="300" alt="photo_three" /></li>
+        <li><img src="images/4.jpg" width="600" height="300" alt="photo_four" /></li>
+        <li><img src="images/5.jpg" width="600" height="300" alt="photo_five" /></li>
+        <li><img src="images/6.jpg" width="600" height="300" alt="photo_six" /></li>
+      </ul>
+      <div id="sidebar_container">
+        <div class="sidebar">
+         
+        </div>
+        <div class="sidebar">
+         
+          
+        </div>
+      </div>
+      <div id="content">
+        <h1>Welcome to my home page</h1>
+        <p>This is my home page, which introduces my personal information, including my home address, my phone, my height, weight and age.And my personal work home page (under a <a href=https://www.artstation.com/liyuw>This is my personal work website.)</p>
+       
+        <h2>Basic information about me</h2>
+        <p>Based on last year's physical examination:</p>
+        <ul>
+          <li>height 176cm</li>
+          <li>weight 60kg</li>
+          <li>Gender male</li>
+          <li>Like painting</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p><a href="index.html">home</a>
+      <p>&copy; <span id="year"></span> ZHANGZHETAO. All Rights Reserved. | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+    
+    var d = new Date();
+    document.getElementById('year').innerHTML = d.getFullYear();
+  </script>
+</body>
+</html>
